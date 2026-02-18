@@ -3,17 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sudeepa Bannihatti| Portfolio</title>
+  <title>Sudeepa Bannihatti | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Devicon Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 <body>
 
   <!-- NAVBAR -->
   <nav>
     <div class="container nav-flex">
-      <footer class="footer">
-  <p>© 2026 Sudeepa E B | Built with ❤️ and Code</p>
-</footer>
+      <div class="logo">
+  SB. <span class="role"> AI/ML </span>
+    </div>
 
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
@@ -35,10 +37,8 @@
           <span>Bannihatti</span>
         </h1>
         <p class="hero-sub">
-         I'm a passionate engineering student focused on software development,
-      computer vision, and full-stack applications. I enjoy building real-world
-      solutions and learning new technologies.
-
+          I'm a passionate engineering student focused on software development,
+          computer vision, and full-stack applications.
         </p>
         <a href="#contact" class="btn">Get in Touch</a>
       </div>
@@ -46,32 +46,83 @@
     </div>
   </section>
 
-  <!-- SKILLS -->
-  <section id="skills" class="section">
-    <div class="container">
-      <span class="tag">EXPERTISE</span>
-      <h2>Skills & Technologies</h2>
+ <!-- SKILLS (LOGO + NAME) -->
+<section id="skills" class="section">
+  <div class="container">
+    <span class="tag">SKILLS</span>
+    <h2>Languages & Databases</h2>
 
-      <div class="card-grid">
-        <div class="card">
-          <h4>Languages</h4>
-          <p>Python, JavaScript, HTML, CSS, C,</p>
-        </div>
-        <div class="card">
-          <h4>Frontend</h4>
-          <p>React, Flutter, HTML, CSS</p>
-        </div>
-        <div class="card">
-          <h4>Backend & DB</h4>
-          <p>Node.js, MongoDB, Firebase</p>
-        </div>
-        <div class="card">
-          <h4>DevOps & Tools</h4>
-          <p>AWS, Git, Jenkins</p>
-        </div>
+    <div class="logo-grid">
+      <div class="skill-item">
+        <i class="devicon-python-plain colored"></i>
+        <span>Python</span>
+      </div>
+      <div class="skill-item">
+        <i class="devicon-javascript-plain colored"></i>
+        <span>JavaScript</span>
+      </div>
+      <div class="skill-item">
+        <i class="devicon-html5-plain colored"></i>
+        <span>HTML</span>
+      </div>
+      <div class="skill-item">
+        <i class="devicon-css3-plain colored"></i>
+        <span>CSS</span>
+      </div>
+      <div class="skill-item">
+        <i class="devicon-c-plain colored"></i>
+        <span>C</span>
+      </div>
+      <div class="skill-item">
+        <i class="devicon-mysql-plain colored"></i>
+        <span>MySQL</span>
+      </div>
+      <div class="skill-item">
+        <i class="devicon-mongodb-plain colored"></i>
+        <span>MongoDB</span>
       </div>
     </div>
-  </section>
+
+    <h2>Frameworks</h2>
+    <div class="logo-grid">
+      <div class="skill-item">
+        <i class="devicon-react-original colored"></i>
+        <span>React</span>
+      </div>
+      <div class="skill-item">
+        <i class="devicon-flutter-plain colored"></i>
+        <span>Flutter</span>
+      </div>
+      <div class="skill-item">
+        <i class="devicon-nodejs-plain colored"></i>
+        <span>Node.js</span>
+      </div>
+     
+      <div class="skill-item">
+        <i class="devicon-opencv-plain colored"></i>
+        <span>OpenCV</span>
+      </div>
+    </div>
+
+    <h2>Tools</h2>
+    <div class="logo-grid">
+      <div class="skill-item">
+        <i class="devicon-git-plain colored"></i>
+        <span>Git</span>
+      </div>
+     
+      <div class="skill-item">
+        <i class="devicon-jenkins-line colored"></i>
+        <span>Jenkins</span>
+      </div>
+      <div class="skill-item">
+        <i class="devicon-firebase-plain colored"></i>
+        <span>Firebase</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <!-- PROJECTS -->
   <section id="projects" class="section">
@@ -81,51 +132,56 @@
 
       <div class="projects-grid">
         <div class="project">
-          <h3>E-commerce website</h3>
-          <p>E-commerce website using React</p>
+          <h3>E-commerce Website</h3>
+          <p>React based shopping platform.</p>
         </div>
         <div class="project">
           <h3>Portfolio Website</h3>
-          <p>Personal portfolio built using HTML, CSS and JavaScript.</p>
+          <p>Personal responsive portfolio.</p>
         </div>
         <div class="project">
-          <h3>OBJECT DETECTION</h3>
-          <p>Detects and classifies objects in images and videos using computer vision.</p>
+          <h3>Object Detection</h3>
+          <p>Real-time CV object detection system.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- EDUCATION -->
-<section id="education" class="section">
+  <section id="education" class="section">
   <div class="container">
     <span class="tag">EDUCATION</span>
-    <h2>Academic Background</h2>
+    <h2>Academic Journey</h2>
 
-    <div class="two-col">
-      <!-- Left Column -->
-      <div>
-        <div class="card">
-          <h4>B.E in Computer Science (AI & ML)</h4>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>B.E in CSE (AI & ML)</h3>
           <p>KVG College of Engineering, Sullia</p>
           <span>2022 – 2026 | CGPA: 8.2</span>
         </div>
       </div>
 
-      <!-- Right Column -->
-      <div>
-        <div class="card">
-          <h4>PUC</h4>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>PUC</h3>
           <p>Akshara Residential College, Shikaripura</p>
-          <span>2019 – 2021 | Marks: 75%</span>
-        </div>
-
-        <div class="card" style="margin-top: 1.5rem;">
-          <h4>10th</h4>
-          <p>GHS Huluginakoppa</p>
-          <span>2017 – 2019 | Marks: 69%</span>
+          <span>2019 – 2021 | 75%</span>
         </div>
       </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>10th Standard</h3>
+          <p>GHS Huluginakoppa</p>
+          <span>2017 – 2019 | 69%</span>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -136,23 +192,20 @@
     <div class="container center">
       <span class="tag">CONTACT</span>
       <h2>Let's Connect</h2>
-      <p class="muted">Open for internships, projects and collaborations.</p>
+      <p class="muted">Open for internships and collaborations.</p>
 
       <div class="contact-buttons">
         <a href="mailto:sudeepeb251@gmail.com" class="btn">Email</a>
         <a href="tel:+918088653527" class="btn outline">Call</a>
-        <a href="https://www.linkedin.com/in/sudeep-e-b-96b27227a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BUhyM6PCISZ6%2F03tWKKaiww%3D%3D" class="btn">LinkedIn</a>
+        <a href="https://linkedin.com" class="btn">LinkedIn</a>
         <a href="https://github.com/sudeepeb" class="btn">GitHub</a>
-        <a href="Sudeepa_E B_Resume.pdf" class="btn" >Resume</a>
-
-
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    © 2026 Sudeepa Bannihatti. All rights reserved.
+    © 2026 Sudeepa E B | Built with ❤️ and Code
   </footer>
 
 </body>

@@ -178,3 +178,99 @@ nav {
     margin: auto;
   }
 }
+/* Logo Skills */
+.logo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 1.5rem 0 3rem;
+  align-items: center;
+}
+
+.logo-grid i {
+  font-size: 3rem;
+  transition: 0.3s;
+}
+
+.logo-grid i:hover {
+  transform: scale(1.2);
+}
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.skill-item i {
+  font-size: 3rem;
+  margin-bottom: 0.4rem;
+  transition: 0.3s;
+}
+
+.skill-item:hover i {
+  transform: scale(1.2);
+}
+
+.skill-item span {
+  margin-top: 4px;
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.logo .role {
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-left: 6px;
+}
+.tagline {
+  font-size: 0.75rem;
+  color: var(--accent);
+  margin-left: 6px;
+}
+.timeline {
+  position: relative;
+  margin-top: 40px;
+  padding-left: 30px;
+  border-left: 2px solid #e5e7eb;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -9px;
+  top: 6px;
+  width: 16px;
+  height: 16px;
+  background: var(--accent);
+  border-radius: 50%;
+}
+
+.timeline-content {
+  padding-left: 20px;
+}
+
+.timeline-content h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.timeline-content p {
+  margin: 6px 0;
+  color: var(--muted);
+}
+
+.timeline-content span {
+  font-size: 0.9rem;
+  color: #666;
+}
