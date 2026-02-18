@@ -58,6 +58,7 @@ nav {
 
 .logo {
   font-weight: 700;
+  font-size: 1.2rem;
 }
 
 .nav-links {
@@ -177,6 +178,11 @@ nav {
   .hero-img {
     margin: auto;
   }
+
+  .nav-flex {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
 /* Logo Skills */
 .logo-grid {
@@ -218,10 +224,6 @@ nav {
 .skill-item span {
   margin-top: 4px;
 }
-.logo {
-  font-weight: 700;
-  font-size: 1.2rem;
-}
 
 .logo .role {
   font-weight: 400;
@@ -238,7 +240,7 @@ nav {
   position: relative;
   margin-top: 40px;
   padding-left: 30px;
-  border-left: 2px solid #e5e7eb;
+  border-left: 2px solid var(--border);
 }
 
 .timeline-item {
@@ -272,5 +274,5 @@ nav {
 
 .timeline-content span {
   font-size: 0.9rem;
-  color: #666;
+  color: var(--muted);
 }

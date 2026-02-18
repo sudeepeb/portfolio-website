@@ -106,7 +106,7 @@ buttons.forEach(button => {
   button.addEventListener('click', () => {
     buttons.forEach(btn => btn.classList.remove('clicked')); // remove from all
     button.classList.add('clicked'); // add to clicked button
-  });
+  });
 });
 const btn = document.getElementById("themeToggle");
 
@@ -159,9 +159,3 @@ document.querySelectorAll(".btn").forEach(btn => {
     btn.style.transform = "translate(0,0)";
   });
 });
-function openModal() {
-  document.getElementById("modal").style.display = "flex";
-}
-function closeModal() {
-  document.getElementById("modal").style.display = "none";
-}
