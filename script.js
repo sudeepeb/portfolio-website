@@ -10,32 +10,12 @@ navLinks.forEach(link => {
 
 // Animate sections, skills, projects, education
 const sections = document.querySelectorAll('.section');
-const skills = document.querySelectorAll('.skill');
-const projects = document.querySelectorAll('.project');
-const eduCards = document.querySelectorAll('.edu-card');
 
 window.addEventListener('scroll', () => {
   let current = '';
   sections.forEach(section => {
     const sectionTop = section.offsetTop - 150;
     if (scrollY >= sectionTop) current = section.getAttribute('id');
-
-    // Reveal section
-    if (section.getBoundingClientRect().top < window.innerHeight - 100) {
-      section.classList.add('visible');
-    }
-  });
-
-  skills.forEach(skill => {
-    if (skill.getBoundingClientRect().top < window.innerHeight - 100) skill.classList.add('visible');
-  });
-
-  projects.forEach(proj => {
-    if (proj.getBoundingClientRect().top < window.innerHeight - 100) proj.classList.add('visible');
-  });
-
-  eduCards.forEach(card => {
-    if (card.getBoundingClientRect().top < window.innerHeight - 100) card.classList.add('visible');
   });
 
   // Highlight navbar
@@ -43,6 +23,14 @@ window.addEventListener('scroll', () => {
     link.classList.remove('active');
     if (link.getAttribute('href') === '#' + current) link.classList.add('active');
   });
+
+  // Progress bar
+  const scroll = document.documentElement.scrollTop;
+  const height = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = document.getElementById("progress");
+  if (progress) {
+    progress.style.width = (scroll / height) * 100 + "%";
+  }
 });
 
 // Particle background
@@ -114,12 +102,6 @@ btn.onclick = () => {
   document.body.classList.toggle("light");
   btn.textContent = document.body.classList.contains("light") ? "☀️" : "🌙";
 };
-window.onscroll = () => {
-  const scroll = document.documentElement.scrollTop;
-  const height = document.documentElement.scrollHeight - window.innerHeight;
-  document.getElementById("progress").style.width =
-    (scroll / height) * 100 + "%";
-};
 function openModal() {
   document.getElementById("modal").style.display = "flex";
 }
@@ -143,7 +125,7 @@ const observer = new IntersectionObserver(entries => {
       entry.target.classList.add("visible");
     }
   });
-});
+}, { rootMargin: "0px 0px -100px 0px" });
 
 document.querySelectorAll(".section, .project, .skill, .edu-card")
   .forEach(el => observer.observe(el));
