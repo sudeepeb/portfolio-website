@@ -27,11 +27,11 @@ body {
 .container {
   max-width: 1200px;
   margin: auto;
-  padding: 0 20px;
+  padding: 0 12px;
 }
 
 .section {
-  padding: 100px 0;
+  padding: 60px 0;
 }
 
 .center {
@@ -87,10 +87,16 @@ nav {
 
 /* Hero */
 .hero-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  gap: 2rem;
+}
+
+.hero-img {
+  width: 320px;
+  border-radius: 16px;
+  margin-right: 40px;
 }
 
 .hero-title {
@@ -153,8 +159,8 @@ h3 {
 .logo-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
-  margin: 2rem 0 3rem;
+  gap: 1.2rem;
+  margin: 1rem 0 2rem;
 }
 
 .skill-item {
@@ -180,14 +186,14 @@ h3 {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+  gap: 1.2rem;
+  margin-top: 1rem;
 }
 
 .project {
   background: white;
   border: 1px solid var(--border);
-  padding: 2rem;
+  padding: 1.4rem;
   border-radius: 16px;
   transition: 0.3s ease;
 }
@@ -215,12 +221,12 @@ h3 {
   margin-top: 1.5rem;
 }
 .edu-item {
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 .edu-card {
   background: white;
   border: 1px solid var(--border);
-  padding: 2rem;
+  padding: 1.4rem;
   border-radius: 16px;
   transition: 0.3s ease;
 }
@@ -293,3 +299,9 @@ h3 {
     gap: 1rem;
   }
 }
+.cert-img{
+  width:100%;
+  border-radius:12px;
+  margin-bottom:15px;
+}
+
